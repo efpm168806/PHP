@@ -64,7 +64,7 @@ echo $datetime->format("T")."<br><br>";
 echo "2017年12月31日是世界末日，還距離現在相差:"."<br>";
 $second1=floor((strtotime($e_date)-strtotime($s_date)));
 echo floor($second1/86400).'天';
-echo floor(($second1%86400)/3600/2).'小時';//有bug
+echo floor(($second1%86400)/3600).'小時';
 echo floor((($second1%86400)%3600)/60).'分鐘';
 echo floor((($second1%86400)%3600)%60)."秒<br>";
 
